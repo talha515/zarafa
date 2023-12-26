@@ -38,8 +38,8 @@ class Button extends StatelessWidget {
     return CustomContainer(
       onTap: onTap,
       width: width ?? ScreenUtil().screenWidth,
-      height: height ?? 55.w,
-      borderRadius: borderRadius ?? 50.r,
+      height: height ?? 50.h,
+      borderRadius: borderRadius ?? 8.r,
       color: color ?? primaryColor,
       borderColor: borderColor ?? Colors.transparent,
       borderWidth: borderWidth ?? 0.w,
@@ -47,7 +47,7 @@ class Button extends StatelessWidget {
           Center(
             child: TextWidget(
               text: text ?? '',
-              fontSize: fontsize ?? 16.sp,
+              fontSize: fontsize ?? 20.sp,
               color: textColor ?? whiteColor,
               fontWeight: fontWeight ?? FontWeight.w600,
             ),
