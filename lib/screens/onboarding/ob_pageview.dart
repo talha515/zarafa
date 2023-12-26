@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:zarafa/screens/auth/login.dart';
 import 'package:zarafa/screens/onboarding/ob_1.dart';
 import 'package:zarafa/screens/onboarding/ob_2.dart';
 import 'package:zarafa/screens/onboarding/ob_3.dart';
@@ -81,9 +83,8 @@ class _OnboardingPageViewState extends State<OnboardingPageView> {
                               duration: const Duration(milliseconds: 400),
                               curve: Curves.linear);
                         } else {
-                          // HomeController.to.setSpData(false);
-                          // Get.offAll(() => const LoginScreen(),
-                          //     transition: Transition.fade);
+                          Get.offAll(() => const LoginScreen(),
+                              transition: Transition.fade);
                         }
                       },
                       height: 48.h,

@@ -38,7 +38,7 @@ class Button extends StatelessWidget {
     return CustomContainer(
       onTap: onTap,
       width: width ?? ScreenUtil().screenWidth,
-      height: height ?? 50.h,
+      height: height ?? 52.h,
       borderRadius: borderRadius ?? 8.r,
       color: color ?? primaryColor,
       borderColor: borderColor ?? Colors.transparent,
