@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
@@ -14,6 +16,7 @@ class MobileNUmber extends StatefulWidget {
 }
 
 class _MobileNUmberState extends State<MobileNUmber> {
+  bool isNumberValid = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,13 +58,16 @@ We will send you 4-digi code to verify account.''',
               height: 15.h,
             ),
             IntlPhoneField(
-              onSubmitted: (value) {
-                // if(value){}
-              },
               validator: (val) {
-                if (val!.number.isNotEmpty) {
-                  print('valid');
+                if (val!.completeNumber.length == 13) {
+                  log('valid');
+                  setState(() {
+                    isNumberValid = true;
+                  });
                 } else {
+                  setState(() {
+                    isNumberValid = false;
+                  });
                   print('object');
                 }
               },
@@ -126,14 +132,30 @@ We will send you 4-digi code to verify account.''',
               onChanged: (p) {},
             ),
             SizedBox(
-              height: 15.h,
+              height: 20.h,
             ),
             Button(
               text: 'Send Code',
+              color:
+                  isNumberValid ? primaryColor : primaryColor.withOpacity(0.3),
+            ),
+            SizedBox(
+              height: 20.h,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextWidget(text: 'Already have acount?'),
+                TextWidget(
+                  text: ' Login',
+                  color: primaryColor,
+                ),
+              ],
             )
           ],
         ),
       ),
+      resizeToAvoidBottomInset: false,
     );
   }
 }
