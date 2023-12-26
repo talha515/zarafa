@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:zarafa/screens/auth/mobile_number.dart';
 import 'package:zarafa/utils/button.dart';
 import 'package:zarafa/utils/colors.dart';
 import 'package:zarafa/utils/text_field.dart';
@@ -203,12 +205,15 @@ class _SignUpState extends State<SignUp> {
                 height: 15.h,
               ),
               Button(
+                borderRadius: 10.r,
                 onTap: () {
-                  if (_formkey.currentState!.validate()) {
-                    print('congrats');
-                  } else {
-                    print('error');
-                  }
+                  Get.to(() => MobileNUmber());
+                  // if (_formkey.currentState!.validate()) {
+                  //   print('congrats');
+                  //   Get.to(() => MobileNUmber());
+                  // } else {
+                  //   print('error');
+                  // }
                 },
                 text: 'Sign Up',
               )
