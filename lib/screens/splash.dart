@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:zarafa/utils/colors.dart';
 import 'package:zarafa/utils/text_widget.dart';
 
@@ -15,7 +16,9 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(seconds: 5), () {});
+    Future.delayed(const Duration(seconds: 5), () {
+      // Get.off(()=>)
+    });
   }
 
   @override

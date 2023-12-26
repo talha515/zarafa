@@ -3,14 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zarafa/utils/button.dart';
 import 'package:zarafa/utils/colors.dart';
 
-class LaunchPageView extends StatefulWidget {
-  const LaunchPageView({super.key});
+class OnboardingPageView extends StatefulWidget {
+  const OnboardingPageView({super.key});
 
   @override
-  State<LaunchPageView> createState() => _LaunchPageViewState();
+  State<OnboardingPageView> createState() => _OnboardingPageViewState();
 }
 
-class _LaunchPageViewState extends State<LaunchPageView> {
+class _OnboardingPageViewState extends State<OnboardingPageView> {
   PageController controller = PageController(initialPage: 0);
   int i = 0;
   @override
