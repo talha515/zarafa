@@ -81,7 +81,22 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Button(
               text: 'Login',
-            )
+            ),
+            Row(
+              children: [
+                TextWidget(text: 'Have not account? '),
+                TextWidget(
+                  onTap: () {},
+                  text: 'Sign Up',
+                  color: primaryColor,
+                ),
+              ],
+            ),
+            TextWidget(
+              text: 'or Signup with',
+              fontSize: 12.sp,
+              fontWeight: FontWeight.w500,
+            ),
           ],
         ),
       ),
