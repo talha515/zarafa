@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:zarafa/screens/auth/sign_up.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
             home: child,
           );
         },
-        child: const MyHomePage(title: 'Flutter Demo Home Page'));
+        child: SignUp());
   }
 }
 
