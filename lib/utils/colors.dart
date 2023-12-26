@@ -8,7 +8,7 @@ Color greyColor = const Color(0xff9D9EFF);
 Color purpleColor = Color(0xff9D00DE);
 Color darkBLue = Color(0xff010247);
 Color hinttextColor = const Color(0xffA5A5A5);
-Color yellow = const Color(0xffEAAF4E);
+Color formfieldborderColor = const Color(0xff8080a3);
 Color lightBackGroundColor = Color(0xffF4F4F4);
 Color lightBorderColor = const Color(0xffD1D1D1);
 

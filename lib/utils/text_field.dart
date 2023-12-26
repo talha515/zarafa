@@ -89,34 +89,34 @@ class CustomTextFormField extends StatelessWidget {
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         filled: true,
-        fillColor: filledColor ?? darkBackGroundColor,
+        fillColor: filledColor ?? Colors.transparent,
         isDense: true,
         contentPadding: contentpadding ??
             EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
         hintStyle: TextStyle(
             color: hintTextColor ?? hinttextColor,
             fontFamily: fontFamily ?? 'Inter',
-            fontSize: hintTextSize ?? 14.sp,
+            fontSize: hintTextSize ?? 16.sp,
             fontWeight: hintFontWeight ?? FontWeight.w400),
         hintText: hint,
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius ?? 50.r),
+          borderRadius: BorderRadius.circular(borderRadius ?? 10.r),
           borderSide: BorderSide(
             width: 1.w,
             color: primaryColor,
           ),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius ?? 50.r),
-          borderSide:
-              BorderSide(color: borderColor ?? lightBorderColor, width: 1.w),
+          borderRadius: BorderRadius.circular(borderRadius ?? 10.r),
+          borderSide: BorderSide(
+              color: borderColor ?? formfieldborderColor, width: 1.w),
         ),
         errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius ?? 50.r),
+          borderRadius: BorderRadius.circular(borderRadius ?? 10.r),
           borderSide: BorderSide(color: Colors.red, width: 1.w),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(borderRadius ?? 50.r),
+          borderRadius: BorderRadius.circular(borderRadius ?? 10.r),
           borderSide: BorderSide(color: Colors.red, width: 1.w),
         ),
       ),

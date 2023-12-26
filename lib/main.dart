@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:zarafa/screens/auth/sign_up.dart';
 import 'package:zarafa/screens/splash.dart';
 
 void main() {
@@ -27,6 +28,6 @@ class MyApp extends StatelessWidget {
             home: child,
           );
         },
-        child: const SplashScreen());
+        child: const SignUp());
   }
 }
